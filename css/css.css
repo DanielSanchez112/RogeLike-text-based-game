@@ -1,0 +1,86 @@
+/* Estilo general */
+body {
+    font-family: 'Press Start 2P', monospace;
+    background-color: #000;
+    color: #0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/assets/imagenes/background.jpg'); /* Ruta a la imagen */
+    background-size: cover; /* Escalar la imagen para cubrir toda la pantalla */
+    background-repeat: no-repeat; /* Evitar que la imagen se repita */
+    background-position: center;
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Terminal de juego */
+.terminal {
+    flex: 3;
+    height: 60vh;
+    background-color: #111;
+    border: 2px solid #0f0;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-right: 20px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 12px;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    outline: none;
+    font-size: 12px;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.log {
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+}
+
+/* Inventario */
+.inventory {
+    flex: 1;
+    height: 60vh;
+    background-color: #111;
+    border: 2px solid #0f0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+    margin-right: 1%;
+}
+
+.inventory h3 {
+    margin: 0 0 10px;
+    color: #0f0;
+    text-align: center;
+}
+
+.inventory ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.inventory ul li {
+    margin: 5px 0;
+    color: rgb(255, 255, 255);
+}
